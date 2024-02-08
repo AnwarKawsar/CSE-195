@@ -1,1 +1,2 @@
-cgpa
+
+    return n*factorial(n-1);
