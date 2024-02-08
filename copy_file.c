@@ -2,17 +2,15 @@
 int main(){
     FILE *f,*f1;
     char a;
-    f=fopen("from.txt","r");
-    f1=fopen("to.txt","w");
+    f=fopen("input.txt","r");
+    f1=fopen("output.txt","w");
     if(f==NULL){
         printf("Invalid file");
 
     }else{
         while((a=fgetc(f))!=EOF){
-            putc(a,f1);
-            }
-
+            fputc(a,f1);
+        }
     }
-    return 0;
-
+return 0;
 }
